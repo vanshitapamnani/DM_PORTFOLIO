@@ -1,0 +1,135 @@
+.contact-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.contact-inner {
+  padding: 35px;
+  width: 650px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(14px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+
+  /* Animation */
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+
+  text-align: center;
+}
+
+.contact-heading {
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.contact-inner p {
+  margin: 25px 0;
+  color: white;
+  font-weight: normal;
+  font-size: large;
+  padding: 20px;
+  margin-bottom: 10px;
+  line-height: 1.9;
+}
+
+/* Contact Links */
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+.contact-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.contact-links a:hover {
+  color: #b5f4ff;
+  text-shadow: 0 0 8px #b5f4ff;
+}
+
+/* Button */
+button {
+  background: rgba(255, 255, 255, 0.18);
+  border: none;
+  padding: 10px 22px;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Fade animation */
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* .contact-outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+
+.contact-inner {
+  border: 2px solid black;
+  padding: 30px;
+  border-radius: 10px;
+  width: 450px;
+  margin-top: 50px;
+  font-size: large;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  animation: fadeUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.contact-heading {
+  color: white;
+}
+.contact-inner p {
+  margin: 30px 0;
+}
+
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+button {
+  margin: 0;
+}
+.contact-links a {
+  margin: 20px;
+} */
