@@ -7,7 +7,8 @@ function NavBar({ setSection }) {
         <li onClick={() => setSection("main")}>Home</li>
         <li onClick={() => setSection("about")}>About</li>
         <li onClick={() => setSection("skills")}>Skills</li>
-        <li onClick={() => setSection("projects")}>Projects</li>
+        {/* <li onClick={() => setSection("projects")}>Projects</li> */}
+        {/* <li onClick={() => setSection("certificates")}>Certificates </li> */}
         <li onClick={() => setSection("contact")}>Contact</li>
       </ul>
     </nav>

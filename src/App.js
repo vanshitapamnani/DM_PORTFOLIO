@@ -3,11 +3,19 @@ import Main from "./components/Main";
 import About from "./components/About";
 import { useState } from "react";
 import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Certificate from "./components/Certificate";
+// import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 
 function App() {
-  const sections = ["main", "about", "skills", "projects", "contact"];
+  const sections = [
+    "main",
+    "about",
+    "skills",
+    "projects",
+    "contact",
+    "certificate",
+  ];
   const [section, setSection] = useState("main");
   function handleNext() {
     const currentIndex = sections.indexOf(section);
@@ -21,9 +29,14 @@ function App() {
       <Navbar setSection={setSection} />
       {section === "main" && <Main handleNext={handleNext} />}
       {section === "about" && <About handleNext={handleNext} />}
-      {section === "skills" && <Skills handleNext={handleNext} />}
-      {section === "projects" && <Projects handleNext={handleNext} />}
+      {section === "skills" && (
+        <Skills handleNext={handleNext} setSection={setSection} />
+      )}
+      {/* {section === "projects" && <Projects handleNext={handleNext} />} */}
       {section === "contact" && <Contact handleNext={handleNext} />}
+      {section === "certificate" && (
+        <Certificate handleNext={handleNext} setSection={setSection} />
+      )}
     </div>
   );
 }

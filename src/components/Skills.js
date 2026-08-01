@@ -1,6 +1,6 @@
 import "../styles/skills.css";
 
-function Skills({ handleNext }) {
+function Skills({ handleNext, setSection }) {
   return (
     <>
       <div className="outer-container">
@@ -56,6 +56,10 @@ function Skills({ handleNext }) {
       </div>
       <div className="button-container">
         <button onClick={handleNext}>Next</button>
+        <button onClick={() => setSection("certificate")}>
+          {" "}
+          View Certificates{" "}
+        </button>
       </div>
     </>
   );

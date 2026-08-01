@@ -29,7 +29,7 @@ function Intro({ handleNext }) {
           </div>
           {/* Start from here NEXT ...*/}
           <div className="resume-link">
-            <a href="UPDATED_RESUME.pdf" target="_blank">
+            <a href="DM_RESUME.pdf" target="_blank">
               View Resume <FiExternalLink />
             </a>
           </div>

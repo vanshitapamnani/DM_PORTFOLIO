@@ -18,7 +18,9 @@ ul {
 ul li {
   padding: 8px 16px;
   border-radius: 6px;
-  transition: background-color 0.3s, color 0.3s;
+  transition:
+    background-color 0.3s,
+    color 0.3s;
   cursor: pointer;
 }
 
@@ -30,7 +32,7 @@ ul li:hover {
 .navbar {
   display: flex;
   justify-content: space-around;
-  align-items: centre;
+  align-items: center;
   margin-top: 30px;
 
   /* padding: 15px 50px; */
@@ -93,3 +95,27 @@ ul li:hover {
     margin-top: 10px;
   }
 } */
+
+@media (max-width: 768px) {
+  .navbar {
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+
+  ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 12px;
+    width: 100%;
+  }
+
+  ul li {
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+}

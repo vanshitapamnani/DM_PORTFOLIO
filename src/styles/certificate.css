@@ -1,0 +1,30 @@
+.certificate-page {
+  width: 90%;
+  margin: auto;
+  padding: 60px 0;
+}
+
+.certificate-page h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.certificate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 35px;
+}
+
+.back-btn {
+  margin: 50px auto;
+  display: block;
+  padding: 12px 35px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
